@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event</title>
+  <link rel="stylesheet" href="../home/Home.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class = "container nav_container">
+        <a href="Home.html"><h4>CAMPUS CONNECT</h4></a>
+        <ul class="nav_menu">
+            <li><a href="../home/Home.html">Home</a></li>
+            <!-- <li><a href="../home/about.html">About</a></li> -->
+            <li><a href="../clubPage/clubPage.html">Clubs</a></li>
+            <li><a href="../eventpage/index.html">Events</a></li>
+            <li><a href="../home/Contact.html">Contact</a></li>
+            <li id="request-element" style="display: none;"><a href="../permission/index.html">Requests</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+</nav>
+  <h2>Create Event</h2>
+  <form id="eventForm" method="POST"  enctype="multipart/form-data">
+    <label for="eventName">Name:</label><br>
+    <input type="text" id="eventName" name="name" required><br>
+    <label for="eventVenue">Venue:</label><br>
+    <select id="eventVenue" name="venue" required>
+      <option value="">Select Venue</option>
+    </select><br>
+    <label for="eventClub">Club:</label><br>
+    <select id="eventClub" name="club" required>
+      <option value="">Select Club</option>
+    </select><br>
+    <label for="eventStartTime">Starting Time:</label><br>
+    <input type="datetime-local" id="eventStartTime" name="startingTime" required><br>
+    <label for="eventEndTime">Ending Time:</label><br>
+    <input type="datetime-local" id="eventEndTime" name="endingTime" required><br>
+    <label for="eventPrice">Price:</label><br>
+    <input type="number" id="eventPrice" name="price"><br><br>
+    <label for="eventImage">Event Image:</label><br>
+    <input type="file" id="eventImage" name="image" ><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div id="errorMessage" class="error-message"></div>
+  <script src="script.js"></script>
+</body>
+</html>

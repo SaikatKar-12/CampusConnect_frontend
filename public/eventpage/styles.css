@@ -1,0 +1,346 @@
+:root{
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-varient: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light:rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --container-width-1g: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+#cardContainer {
+  display: flex; /* Use flexbox to arrange children side by side */
+  flex-wrap: wrap;
+  gap: 20px; /* Add some space between the cards */
+  padding: 20px;
+  padding-top: 20px;
+  perspective: 1000px;
+}
+.card {
+  /* padding-top: 50px; */
+  /* border-radius: 10px; */
+  border: 3px solid rgb(255, 255, 255);
+  transform-style: preserve-3d;
+  background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,#ffffff 0 18.75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 0;
+  background-color: #f0f0f0;
+  width: 100%;
+  box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+  /* transition: all 0.5s ease-in-out; */
+  max-width: calc(25% - 20px);
+}
+
+
+.content-box {
+  background:#0d7bcd;
+  /* border-radius: 10px 100px 10px 10px; */
+  /* transition: all 0.5s ease-in-out; */
+  padding: 0px 25px 25px 25px;
+  /* transform-style: preserve-3d; */
+}
+
+.content-box .card-title {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  /* transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 50px); */
+}
+
+/* .content-box .card-title:hover {
+  transform: translate3d(0px, 0px, 60px);
+} */
+
+.content-box .card-content {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f2f2f2;
+  /* transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 30px); */
+}
+
+/* .content-box .card-content:hover {
+  transform: translate3d(0px, 0px, 60px);
+} */
+
+.content-box .see-more {
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #0d7bcd;
+  /* border-radius: 5px; */
+  background: white;
+  padding: 0.5rem 0.7rem;
+  /* transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px); */
+}
+
+/* .content-box .see-more:hover {
+  transform: translate3d(0px, 0px, 60px);
+} */
+
+.date-box {
+  position: absolute;
+  top: 300px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  background: white;
+  border: 1px solid #0d7bcd;
+  /* border-radius: 10px; */
+  padding: 10px;
+  /* transform: translate3d(0px, 0px, 80px); */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+.date-box span {
+  display: block;
+  text-align: center;
+}
+
+.date-box .month {
+  color:#0d7bcd;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.date-box .date {
+  font-size: 20px;
+  font-weight: 900;
+  color:#0d7bcd;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.button {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #0163cd;
+  background-color: #007bff;
+  top: 140px;
+  right: 35px;
+  border-radius: 10px;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+  
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #0163cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #0163cd;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #0163cd;
+}
+
+.button:active {
+  border: 1px solid #0163cd;
+}
+.wrapper {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  .loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg); /* Adjust opacity and color as needed */
+     z-index: 9999; /*Ensure the loader appears on top of other content */
+}
+
+.loader {
+    width: 200px;
+    height: 60px;
+    position: relative;
+}
+
+
+.image-box {
+  width: 100%; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.image-box img {
+  width: 100%; /* Make sure the image fills the entire width of the image box */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the entire box while maintaining aspect ratio */
+}
+/* Add this CSS to the existing CSS file */
+
+/* Filter Selection */
+#filter-select {
+  margin: 20px 30px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+}
+
+#filter-select:focus {
+  border-color: #007bff;
+}
+
+/* Adjust appearance for better user interaction */
+#filter-select option {
+  padding: 10px;
+}
+#title{
+  margin-top: 80px;
+}

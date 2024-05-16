@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #0d7bcd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0c6db7;
+}
+
+input:invalid,
+select:invalid {
+  border-color: #ff0000;
+}
+/* styles.css */
+
+.error-message {
+  color: #ff0000;
+  font-size: 16px; /* Increased font size */
+  margin-top: 10px; /* Increased margin */
+  text-align: center; /* Center align the error message */
+}
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Hide default file input button */
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+/* Style custom file input button */
+input[type="file"]::before {
+  content: 'Select Image';
+  display: inline-block;
+  background: #0d7bcd;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Adjust hover effect */
+input[type="file"]::before:hover {
+  background: #0c6db7;
+}
