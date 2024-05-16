@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.card {
+    min-height: 32vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    min-width: 40vw;
+    display: inline-flex;
+    /* justify-content: center;
+    align-items: center; */
+    vertical-align: top;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: .5s ease;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 0;
+    color: #666;
+}
+.club-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+
+#clubList
+{
+    padding-left: 40px;
+}
+.join-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 28px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+}
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #0ef;
+    transform: scale(1.02);
+    
+}
+.card:hover .join-button {
+    background-color: #00adb3; /* Change button color on card hover */
+}
+
+.card {
+    position: relative; /* Ensure circles are positioned relative to card */
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #7952b3;
+    height:275px;
+    width: 30px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+:root {
+    --hover-colors: #7952b3, #ff6347, #4caf50, #f44336, #2196f3, #9c27b0;
+}
+
+
+.card[data-hover-color="1"]::before {
+    background: var(--hover-colors);
+}
+
+.card[data-hover-color="2"]::before {
+    background: var(--hover-colors);
+}
+
+.card[data-hover-color="3"]::before {
+    background: var(--hover-colors);
+}
+
+.card[data-hover-color="4"]::before {
+    background: var(--hover-colors);
+}
+
+.card[data-hover-color="5"]::before {
+    background: var(--hover-colors);
+}
+
+.card[data-hover-color="6"]::before {
+    background: var(--hover-colors);
+}
+.card:hover::before{
+    transition-delay:0.2s ;
+
+  transform: scale(40);
+}
+
+.card:hover{
+    color: #ffffff;
+
+} 
+.card p{
+      padding: 10px 0;
+  }

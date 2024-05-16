@@ -1,0 +1,34 @@
+/* 
+.Cat-h1:hover{
+    text-decoration: underline;
+    
+}
+.Cat-h1:hover{
+    transition: smooth;
+} */
+
+.Cat-h1 {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 400px;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .Cat-h1:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .Cat-h1:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="homenew.css">
+<link rel="stylesheet" href="preloader.css">
+
+<!------Swiper js-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+
+
+
+
+    <title>CAMPUS CONNECT</title>
+</head>
+
+
+
+<body>
+
+    <!--============== Preloader=================  -->
+      
+    <div id="preloader">
+        <svg height="108px" width="108px" viewBox="0 0 128 128" class="loader">
+          <defs>
+            <clipPath id="loader-eyes">
+              <circle transform="rotate(-40,64,64) translate(0,-56)" r="8" cy="64" cx="64" class="loader__eye1"></circle>
+              <circle transform="rotate(40,64,64) translate(0,-56)" r="8" cy="64" cx="64" class="loader__eye2"></circle>
+            </clipPath>
+            <linearGradient y2="1" x2="0" y1="0" x1="0" id="loader-grad">
+              <stop stop-color="#000" offset="0%"></stop>
+              <stop stop-color="#fff" offset="100%"></stop>
+            </linearGradient>
+            <mask id="loader-mask">
+              <rect fill="url(#loader-grad)" height="128" width="128" y="0" x="0"></rect>
+            </mask>
+          </defs>
+          <g stroke-dasharray="175.93 351.86" stroke-width="12" stroke-linecap="round">
+            <g>
+              <rect clip-path="url(#loader-eyes)" height="64" width="128" fill="hsl(193,90%,50%)"></rect>
+              <g stroke="hsl(193,90%,50%)" fill="none">
+                <circle transform="rotate(180,64,64)" r="56" cy="64" cx="64" class="loader__mouth1"></circle>
+                <circle transform="rotate(0,64,64)" r="56" cy="64" cx="64" class="loader__mouth2"></circle>
+              </g>
+            </g>
+            <g mask="url(#loader-mask)">
+              <rect clip-path="url(#loader-eyes)" height="64" width="128" fill="hsl(223,90%,50%)"></rect>
+              <g stroke="hsl(223,90%,50%)" fill="none">
+                <circle transform="rotate(180,64,64)" r="56" cy="64" cx="64" class="loader__mouth1"></circle>
+                <circle transform="rotate(0,64,64)" r="56" cy="64" cx="64" class="loader__mouth2"></circle>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+    <nav>
+        <div class = "container nav_container">
+            <img src="logoname.png" alt="HTML5 Icon" style="width: 300px;height:45px;">
+            <!-- <a href="Home.html"><h4>CAMPUS CONNECT</h4></a> -->
+            <ul class="nav_menu">
+            
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="../clubPage/clubPage.html">Clubs</a></li>
+                <li><a href="../eventpage/index.html">Events</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <!-- <li><a id="chatLink" href="http://localhost:5000/chat/103">Chat</a></li> -->
+                <li id="request-element" style="display: none;"><a href="../permission/index.html">Requests</a></li>
+                <li class="login-buttons">
+                    <button id="chatLink" style="display: none;">Chatbox</button>
+                    <button id="login-btn" style="display: none;">Login</button>
+                    <button id="logout-btn" style="display: none;">Logout</button>
+                </li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+<!--------------------------NAV END--------------------------------------->
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Built for the events of today—and tomorrow</h1>
+                <p>
+                    Everything you need to craft impactful event experiences all while staying technologically relevant, now and always.                </p>
+                </p>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="header_right">
+                <div class="header_right-image">
+                    <video class="vid" width="520" height="440" autoplay loop><source src="banner-intro.webm"></video>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+<!--------------------------------------------------CATEGORIES----------------------------------->
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1 class="Cat-h1" style="text-align: center;">Categories</h1>
+                <h4 style="text-align: center;">
+                    The simplest way to host all your events
+                </h4>
+                <!-- <a href="#" class="btn">Learn More</a> -->
+            </div>
+            <div class="categories_right">
+                <article class="category">
+                    <!--<span class="categories_icon">
+                        <i class="uil uil-bitcoin-circle"></i>
+                    </span>-->
+                <h3>In-person events</h3>
+                <p>
+                    Keep it all together at the venue
+                </p>
+
+                <video class="vid" width="320" height="240" autoplay loop><source src="inperson-event.webm"></video>
+
+                </article>
+
+                <article class="category">
+                    <!--<span class="categories_icon">
+                        <i class="uil uil-palette"></i>
+                    </span>-->
+                <h3>Virtual events</h3>
+                <p>
+                    Go beyond webinars and workshops
+                </p>
+
+                <video class="vid" width="320" height="240" autoplay loop><source src="virtual-event.webm"></video>
+
+                </article>
+
+                <article class="category">
+                    <!--<span class="categories_icon">
+                        <i class="uil uil-usd-circle"></i>
+                    </span>-->
+                <h3>Hybrid events</h3>
+                <p>
+                    Merge the physical with the virtual
+                </p>
+                <video class="vid" width="320" height="240" autoplay loop><source src="hybrid-event.webm"></video>
+
+                </article>
+
+               
+
+            </div>
+        </div>
+
+    </section>
+
+<!--==================END OF CATEGORIES================-->
+
+<section class="events" style="margin-top: 0;">
+    <h2 style="font-size: 50px;">OUR POPULAR EVENTS</h2>
+    <div class="container events_container">
+        <article class="event">
+            <div class="event_image">
+                <img src="edge.jpg">
+            </div>
+            <div class="event_info">
+                <h4>EDGE NIGHT</h4>
+                <p>
+                    EDGE is Eastern India's 2nd & Kolkata's biggest techno-management fest organized by the members of Geekonix - the tech club of Techno Main Salt Lake college.
+                </p>
+                <a href="event.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="event">
+            <div class="event_image">
+                <img src="anakhronos.jpg">
+            </div>
+            <div class="event_info">
+                <h4>ANAKHRONOS</h4>
+                <p>
+                    Annual Cultural Fest of Techno Main Salt Lake, organized by Team Ankuran.                    </p>
+                <a href="event.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="event">
+            <div class="event_image">
+                <img src="genesis.jpg">
+            </div>
+            <div class="event_info">
+                <h4>GENESIS</h4>
+                <p>
+                    Annual Cultural & Technical meet of BCA department, Techno Main Salt Lake.                    </p>
+                <a href="event.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!--====================END OF EVENTS===========================-->
+
+    <section class="holi">
+        <div class="container holi_container">
+            <div class="holi_left">
+                <h1>Holistic audience engagement</h1>
+                <p>
+                    Onsite or online, our session interaction tools, networking lounges, discussion channels, and 1:1 meetings make it easier than ever for you to engage attendees, foster networking, and create a community.
+                </p>
+            </div>
+            <div class="holi_right">
+                <div class="header_right-image">
+                    <video class="vid" width="520" height="440" autoplay loop><source src="holistic-view.mp4"></video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<!--------------------------------------HOLISTIC---------------------------------->
+<section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="container faqs_container">
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>What is event management software?</h4>
+                <p>
+                    Event management software is a comprehensive technology solution designed to assist event planners in organizing various types of events, such as conferences, workshops, and trade shows, across different formats like onsite, online, and hybrid.
+
+                    It streamlines the entire event planning process, from building an event website and managing ticketing to handling event day operations, including check-in, badging, session management, and event analytics. event day operations like check-in and badging, session management, and event analytics.                </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>How does event management software help organize successful events?</h4>
+                <p>
+                    Event management software can benefit event planners in many ways. Experience the advantages of Event Management Platform:
+
+                    Time-saving: Automate tasks and streamline processes with a single tool, eliminating the need for multiple platforms.
+                    Enhanced attendee engagement: Interact with attendees through various channels for a more immersive experience.
+                    Personalized customization: Tailor your event website, app, and forms to your preferences.
+                    Data-driven insights: Access in-depth reports and analytics to make informed decisions and boost event ROI.
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>How do I attend the event ?</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, est.
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>How do I attend the event ?</h4>
+                <p>
+                    You can attend the events both offline and online, you just need to register yourself then enroll yourself.
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Do all events require fees ?</h4>
+                <p>
+                    No, only those that are organised in a large scale.
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>How can I participate in an event ?</h4>
+                <p>
+                    For that you need to contact to the club that is organising the event.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+<!--=================END OF FAQS=================-->
+
+
+<!-- ================Team Setion============= -->
+
+<!-- <section class="container testimonials_container mySwiper">
+    <h2>Team Members</h2>
+    <div CLASS="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="subho.jpg">
+            </div>
+            <div class="testimonial_info">
+                <h5>Subho Sarkar</h5>
+                <small>Front-End Developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    We will be happy if people get benefit from our work.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="saikat.jpeg">
+            </div>
+            <div class="testimonial_info">
+                <h5>Saikat Kar</h5>
+                <small>Back-End Developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    I had a great experience working with the team.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="sahil.jpeg">
+            </div>
+            <div class="testimonial_info">
+                <h5>Sahil Shaw</h5>
+                <small>Front-End Developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    It was fun working with you all.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="protik1.jpeg">
+            </div>
+            <div class="testimonial_info">
+                <h5>Protik Chakraborty</h5>
+                <small>Animation</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Hopefully everyone will find it helpful.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="danish.jpeg">
+            </div>
+            <div class="testimonial_info">
+                <h5>MD Danish</h5>
+                <small>Marketing</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Beign my first project i am quit happy with the work.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="soumyadeep.jpeg">
+            </div>
+            <div class="testimonial_info">
+                <h5>Soumyadeep Paul</h5>
+                <small>UI & Logo Designer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    We will keep making improvments so that everyone gets the best out of it.
+                </p>
+            </div>
+        </article>
+    </div>
+    <div class="swiper-pagination"></div>
+</section> -->
+
+
+
+    <!--------FOOTER-->
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="Home.html" class="footer_logo">
+                    <h4>CAMPUS CONNECT</h4></a>
+                <p>
+                    Event Management Software
+                </p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="../clubPage/clubPage.html">Clubs</a></li>
+                    <li><a href="../eventpage/index.html">Events</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#"></a>Terms and conditions</li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+01 234 567 8910</p>
+                    <p>subhosarkar2003@gmail.com</p>
+                </div>
+
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+        <div class="footer_copyright">
+            <small>Copyright &copy; CAMPUS CONNECT</small>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="preloader.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        //When window width is >= 600px
+        breakpoints:{
+            600:{
+                slidesPerView: 2
+            }
+        }
+        });
+        var teacher=0;
+        var convenor=0;
+        const token = localStorage.getItem('authToken');
+        var chatLink = document.getElementById('chatLink');
+
+        // Get the username from localStorage
+        var username = localStorage.getItem('username');
+
+        // Append the username to the href attribute of the chat link
+        //chatLink.href = chatLink.href + '/' + encodeURIComponent(username);
+        document.getElementById("chatLink").addEventListener("click", function() {
+            window.location.href = "https://chat-app-fs2p.onrender.com/chat/103"+ '/' + encodeURIComponent(username);
+        });
+        //console.log(token);
+        function checkAuthentication() {
+    // Send a GET request to the isAuthenticated API
+    fetch('https://auth-service-6z5x.onrender.com/api/v1/isAuthenticated', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'x-access-token': token
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Check if the response indicates success and user is authenticated
+        if (data.success ) {
+            console.log('User is authenticated and token is valid');
+            console.log(data);
+            localStorage.setItem('userid',data.data);
+            document.getElementById('logout-btn').style.display = 'inline-block';
+            checkIfUserIsTeacher();
+            checkIfUserIsConvenor();
+            // Handle authenticated user logic here
+        } else {
+            console.log('User is not authenticated');
+            document.getElementById('login-btn').style.display = 'inline-block';
+            // Handle unauthenticated user logic here
+        }
+    })
+    .catch(error => {
+        console.error('Error while checking authentication:', error);
+        // Handle error scenario here
+    });
+}
+
+document.getElementById('login-btn').addEventListener('click', function() {
+            // Redirect to the login page or show login form
+            window.location.href = '../login/form.html'; // Change this to your login page URL
+        });
+
+        // Function to handle logout button click
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            // Clear the token from local storage
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('userid');
+            localStorage.removeItem('isTeacher');
+            localStorage.removeItem('isConvenor');
+            // Redirect to the home page or perform any other action
+            document.getElementById('chatLink').style.display = 'none';
+            window.location.href = 'Home.html'; // Change this to your home page URL
+        });
+
+        // Check if token exists in local storage
+        //const token = localStorage.getItem('authToken');
+        // if (token) {
+        //     // If token exists, show logout button
+        //     document.getElementById('logout-btn').style.display = 'inline-block';
+        // } else {
+        //     // If token does not exist, show login button
+        //     document.getElementById('login-btn').style.display = 'inline-block';
+        // }
+
+// Call the function to check authentication
+checkAuthentication();
+// Function to check if the user is a teacher
+function checkIfUserIsTeacher() {
+    // Sample user ID
+    const id = localStorage.getItem('userid');
+
+    // Check if the user is a teacher and show/hide the "Requests" element accordingly
+    fetch('https://auth-service-6z5x.onrender.com/api/v1/isTeacher', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ id })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.data) {
+            // User is a teacher, show the "Requests" element
+            document.getElementById('request-element').style.display = 'block';
+            localStorage.setItem('isTeacher',1);
+            console.log("is teacher");
+            document.getElementById('chatLink').style.display = 'block';
+        } else {
+            // User is not a teacher, hide the "Requests" element
+            localStorage.removeItem('isTeacher');
+            document.getElementById('request-element').style.display = 'none';
+            console.log("not teacher");
+        }
+    })
+    .catch(error => {
+        console.error('Error checking if user is a teacher:', error);
+    });
+}
+
+function checkIfUserIsConvenor() {
+    // Sample user ID
+    const id = localStorage.getItem('userid');
+
+    // Check if the user is a teacher and show/hide the "Requests" element accordingly
+    fetch('https://auth-service-6z5x.onrender.com/api/v1/isConvenor', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ id })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.data) {
+            // User is a convenor, show the "Requests" element
+            //document.getElementById('chatLink').style.display = 'block';
+            localStorage.setItem('isConvenor',1);
+            console.log("is convenor");
+            document.getElementById('chatLink').style.display = 'block';
+        } else {
+            // User is not a teacher, hide the "Requests" element
+            //document.getElementById('chatLink').style.display = 'none';
+            console.log("not convenor");
+        }
+    })
+    .catch(error => {
+        console.error('Error checking if user is a convenor:', error);
+    });
+}
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
