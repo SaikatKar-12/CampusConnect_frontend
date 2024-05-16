@@ -1,0 +1,118 @@
+
+        /* Your CSS styles here */
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            animation: neonLight 2s infinite alternate-reverse;
+        }
+
+        @keyframes neonLight {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            /* margin-right: 40px;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 10px;
+            color: #666;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-image: linear-gradient(45deg, #003366, #006699);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .ag-courses-item_bg {
+            height: 128px;
+            width: 128px;
+            background-color: #f9b234;
+          
+            z-index: 1;
+            position: absolute;
+            top: -75px;
+            right: -75px;
+          
+            border-radius: 50%;
+          
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+          }
+          .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+            background-color: #3ecd5e;
+          }
+          .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+            background-color: #e44002;
+          }
+          .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+            background-color: #952aff;
+          }
+          .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+            background-color: #cd3e94;
+          }
+          .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+            background-color: #4c49ea;
+          }
+        button[type="submit"]:hover {
+            background-image: linear-gradient(45deg, #004080, #0080ff);
+        }
+
+        #message {
+            margin-top: 20px;
+            color: #007bff;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #message.show {
+            opacity: 1;
+        }
+
+        /* Animation */
+        .container:hover {
+            transform: translateY(-5px);
+        }
