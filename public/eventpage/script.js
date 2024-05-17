@@ -29,7 +29,7 @@ if(isteacher){
 }
 // Fetch events from API
 fetchEventData(id);
-fetch('https://clubandevent.onrender.com/api/v1/club')
+fetch('http://localhost:4000/api/v1/club')
     .then(response => response.json())
     .then(data => {
       if (data.success) {
@@ -60,7 +60,7 @@ fetch('https://clubandevent.onrender.com/api/v1/club')
     });
 async function fetchEventData(id) {
   try {
-    const response = await fetch(`https://clubandevent.onrender.com/api/v1/event?`+`clubId=${id}`);
+    const response = await fetch(`http://localhost:4000/api/v1/event?`+`clubId=${id}`);
     const data = await response.json();
 
     if (!response.ok || !data.success) {
@@ -86,7 +86,7 @@ async function fetchEventData(id) {
 
 async function fetchName(entity, id) {
   try {
-    const response = await fetch(`https://clubandevent.onrender.com/api/v1/${entity}/${id}`);
+    const response = await fetch(`http://localhost:4000/api/v1/${entity}/${id}`);
     const data = await response.json();
 
     if (!response.ok || !data.success) {

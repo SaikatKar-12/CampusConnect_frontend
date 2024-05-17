@@ -7,7 +7,7 @@ obj={
 const loaderWrapper = document.querySelector('.loader-wrapper');
 async function fetchClubs() {
     try {
-        const response = await fetch('https://clubandevent.onrender.com/api/v1/club');
+        const response = await fetch('http://localhost:4000/api/v1/club');
         const clubs = await response.json();
         console.log('Clubs:', clubs);
         displayClubs(clubs);

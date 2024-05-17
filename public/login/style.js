@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         // Send a POST request to the sign-in API
-        fetch('https://auth-service-6z5x.onrender.com/api/v1/signin', {
+        fetch('http://localhost:3000/api/v1/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         console.log(signupData);
         // Send a POST request to the sign-up API
-        fetch('https://auth-service-6z5x.onrender.com/api/v1/signup', {
+        fetch('http://localhost:3000/api/v1/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

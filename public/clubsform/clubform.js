@@ -1,7 +1,7 @@
 
         async function addData(newData) {
             try {
-                const response = await fetch('https://clubandevent.onrender.com/api/v1/club', {
+                const response = await fetch('http://localhost:4000/api/v1/club', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

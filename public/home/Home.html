@@ -510,12 +510,12 @@
         // Append the username to the href attribute of the chat link
         //chatLink.href = chatLink.href + '/' + encodeURIComponent(username);
         document.getElementById("chatLink").addEventListener("click", function() {
-            window.location.href = "https://chat-app-fs2p.onrender.com/chat/103"+ '/' + encodeURIComponent(username);
+            window.location.href = "http://localhost:5000/chat/103"+ '/' + encodeURIComponent(username);
         });
         //console.log(token);
         function checkAuthentication() {
     // Send a GET request to the isAuthenticated API
-    fetch('https://auth-service-6z5x.onrender.com/api/v1/isAuthenticated', {
+    fetch('http://localhost:3000/api/v1/isAuthenticated', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -580,7 +580,7 @@ function checkIfUserIsTeacher() {
     const id = localStorage.getItem('userid');
 
     // Check if the user is a teacher and show/hide the "Requests" element accordingly
-    fetch('https://auth-service-6z5x.onrender.com/api/v1/isTeacher', {
+    fetch('http://localhost:3000/api/v1/isTeacher', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -612,7 +612,7 @@ function checkIfUserIsConvenor() {
     const id = localStorage.getItem('userid');
 
     // Check if the user is a teacher and show/hide the "Requests" element accordingly
-    fetch('https://auth-service-6z5x.onrender.com/api/v1/isConvenor', {
+    fetch('http://localhost:3000/api/v1/isConvenor', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

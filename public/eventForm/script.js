@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let venueIdMap = {}; // Map to store venue name to id mapping
 
   // Fetch club names from API and populate select options
-  fetch('https://clubandevent.onrender.com/api/v1/club')
+  fetch('http://localhost:4000/api/v1/club')
     .then(response => response.json())
     .then(data => {
       if (data.success) {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
   // Fetch venue names from API and populate select options
-  fetch('https://clubandevent.onrender.com/api/v1/venue')
+  fetch('http://localhost:4000/api/v1/venue')
     .then(response => response.json())
     .then(data => {
       if (data.success) {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     async function getEventsByVenue(venueName) {
-      const url = `https://clubandevent.onrender.com/api/v1/event?venueId=${encodeURIComponent(venueName)}`;
+      const url = `http://localhost:4000/api/v1/event?venueId=${encodeURIComponent(venueName)}`;
   
       try {
           const response = await fetch(url);
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
       imageData.append('image', imageInput.files[0]);
 
       try {
-        const response = await fetch('https://campusconnect-wrgc.onrender.com/upload', {
+        const response = await fetch('http://localhost:7000/upload', {
           method: 'POST',
           body: imageData,
         });
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error(error);
       }
     try {
-      const response = await fetch('https://clubandevent.onrender.com/api/v1/event', {
+      const response = await fetch('http://localhost:4000/api/v1/event', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

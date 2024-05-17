@@ -21,7 +21,7 @@ function formatDateTime(dateTimeString) {
   }
   async function fetchName(entity, id) {
     try {
-      const response = await fetch(`https://clubandevent.onrender.com/api/v1/${entity}/${id}`);
+      const response = await fetch(`http://localhost:4000/api/v1/${entity}/${id}`);
       const data = await response.json();
   
       if (!response.ok || !data.success) {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const eventsContainer = document.getElementById('eventsContainer');
 
     // Fetch events data from the API
-    fetch('https://clubandevent.onrender.com/api/v1/event')
+    fetch('http://localhost:4000/api/v1/event')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Code for handling "Decline" button click
             const eventId = event.target.getAttribute('data-event-id');
             // Send DELETE request to remove the event
-            fetch(`https://clubandevent.onrender.com/api/v1/event/${eventId}`, {
+            fetch(`http://localhost:4000/api/v1/event/${eventId}`, {
                 method: 'DELETE'
             })
             .then(response => {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to update event permission
     function updateEventPermission(eventId, permission, event) {
         // Fetch existing event data
-        fetch(`https://clubandevent.onrender.com/api/v1/event/${eventId}`)
+        fetch(`http://localhost:4000/api/v1/event/${eventId}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     permission: permission
                 };
                 // Send PATCH request with merged data
-                fetch(`https://clubandevent.onrender.com/api/v1/event/${eventId}`, {
+                fetch(`http://localhost:4000/api/v1/event/${eventId}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
