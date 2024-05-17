@@ -1,0 +1,72 @@
+.eventdata {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 13px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+#eventsContainer{
+    display: flex;
+}
+.event-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 4px; /* Add margin bottom for spacing */
+    display: block; /* Display as block element */
+}
+
+.text {
+    color: black;
+    margin-bottom: 4px; /* Add margin bottom for spacing */
+    display: block; /* Display as block element */
+}
+
+.acceptBtn {
+    width: 150px;
+    height: 50px;
+    background-color: #7b57ff;
+    transition-duration: 0.2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 25px;
+    display: block; /* Display as block element */
+}
+
+.acceptBtn:hover {
+    background-color: #5e40c9;
+}
+.declineBtn {
+    width: 150px;
+    height: 50px;
+    background-color: #7b57ff;
+    transition-duration: 0.2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 25px;
+    display: block; /* Display as block element */
+}
+
+.declineBtn:hover {
+    background-color: #5e40c9;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
