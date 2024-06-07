@@ -1,4 +1,4 @@
-<h3 align="left">CampusConnect</h3>
+<h2 align="left">CampusConnect</h2>
 <p align="left">
     CampusConnect addresses the challenges of college club management. Organizers struggle with event coordination, member management, and communication. Existing solutions lack efficiency and user experience. CampusConnect streamlines these processes with a comprehensive platform.
 </p>
