@@ -1,6 +1,9 @@
-<h2 align="left">CampusConnect</h2>
+<h1 align="left"><a href="https://campusconnect-wrgc.onrender.com/home/" target="_blank">Campus-Connect</a></h1>
 <p align="left">
     CampusConnect addresses the challenges of college club management. Organizers struggle with event coordination, member management, and communication. Existing solutions lack efficiency and user experience. CampusConnect streamlines these processes with a comprehensive platform.
+</p>
+<p align="left">
+    Hosted Link of CampusConnect:<a href="https://campusconnect-wrgc.onrender.com/home/" target="_blank">Campus-Connect</a>  
 </p>
 <h4 align="left">Features Built:</h4>
 <ul align="left">
@@ -9,9 +12,19 @@
     <li><strong>🔒 Authentication & Authorization:</strong> Implemented a secure authentication and authorization service to assign user roles, including teachers and convenors, ensuring access control and data security.</li>
     <li><strong>💬 Real-Time Chat System:</strong> The real-time chat system enables instant communication and collaboration among club members and faculty.</li>
 </ul>
-<p align="left">
-    Hosted Link of CampusConnect:<a href="https://campusconnect-wrgc.onrender.com/home/" target="_blank">Campus-Connect</a>  
+    <p align="left">
+   Campus connect is built on microservice architecture. Along with frontend it consists event service,authentication service,chat-service. 
+    </p>
+    <p align="left">
+    Event Service github repo:<a href="https://github.com/SaikatKar-12/Event_Service" target="_blank">Event-service</a>  
 </p>
+<p align="left">
+    Auth Service github repo:<a href="https://github.com/SaikatKar-12/Auth_Service_CC" target="_blank">Auth-Service</a>  
+</p>
+<p align="left">
+    Chat Service github repo:<a href="https://github.com/SaikatKar-12/chat_service" target="_blank">Chat-Service</a>  
+</p>
+
 <h4 align="left">Video Demo:</h4>
 <p align="left">
     Watch the video demonstration of CampusConnect:
