@@ -9,6 +9,9 @@
     <li><strong>🔒 Authentication & Authorization:</strong> Implemented a secure authentication and authorization service to assign user roles, including teachers and convenors, ensuring access control and data security.</li>
     <li><strong>💬 Real-Time Chat System:</strong> The real-time chat system enables instant communication and collaboration among club members and faculty.</li>
 </ul>
+<p align="left">
+    Hosted Link of CampusConnect:<a href="https://campusconnect-wrgc.onrender.com/home/" target="_blank">Campus-Connect</a>  
+</p>
 <h4 align="left">Video Demo:</h4>
 <p align="left">
     Watch the video demonstration of CampusConnect:
